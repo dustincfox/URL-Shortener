@@ -1,0 +1,15 @@
+<h1> Sign In </h1>
+
+<%= form_for :session, url: {action: "create"} do |f| %>
+<div>
+    <%= f.label :user_name, "Username" %>
+    <%= f.text_field :user_name %>
+  </div>
+  <div>
+    <%= f.label :password, "Password" %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.submit :value => "Sign In"%>
+  </div>
+<% end %>

@@ -1,0 +1,7 @@
+<h1> Welcome <%= @user.user_name %></h1>
+
+<%= link_to "Shorten a URL", new_url_path %>
+
+<% @urls.each do |url| p url.long_url%>
+  <p><a href="http://<%= url.long_url %>"> <%=url.short_url %>.shortly </a></p>
+<% end %>
